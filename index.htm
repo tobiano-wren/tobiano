@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Horse Phenotype Crosser</title>
+        <link rel="stylesheet" href="styles.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light|Source+Sans+Pro" rel="stylesheet">
+
+    </head>
+<body>
+    
+    <div class="header">
+
+        <div class="navbar"></div>
+
+        <div class="banner">
+            <div class="title">
+                <h1>Horse Phenotype Crosser</h1>
+
+                <a href="#script">
+                    <button class="button">JUMP TO SCRIPT</button>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="info">
+        
+            <table>
+                <tr>
+                    <tr>
+                        <th>Lethal White Overo O,o</th>
+                        <th>Grey G,g</th>
+                        <th>Extension E,e</th>
+                        <th>Agouti A,a</th>
+                    </tr>
+                    <tr>
+                        <td>O: Dominant White <br> o: Non-white</td>
+                        <td>Dominant Grey</td>
+
+                        <td>E: Black Hair Pigment <br> e: Black Skin Pigment</td>
+                        <td>A: Confine Black Pigment to Points <br> a: Distribute Black Pigment</td>
+                    </tr>
+                    <tr>
+                        <td>HZD: Foal death</td>
+                        <td>HZD: Gray</td>
+
+                        <td>HZD: Black Hair</td>
+                        <td>HZD: Confined Black</td>
+                    </tr>
+                    <tr>
+                        <td>HZ: White</td>
+                        <td>HZ: Gray</td>
+
+                        <td>HZ: Black Hair</td>
+                        <td>HZ: Confined Black</td>
+                    </tr>
+                    <tr>
+                        <td>HZR: Non-white</td>
+                        <td>HZR: Non-gray</td>
+
+                        <td>HZR: Chestnut Hair</td>
+                        <td>HZR: Distributed Black</td>
+                    </tr>
+
+                    
+                </tr>
+            </tr>
+            </table>
+
+            <br><br>
+            
+            <table>
+            <tr>
+                <tr>
+                    <th>Cream C&#x1D9C;&#x02B3;,C</th>
+                    <th>Dun D,d (Primitive Markings)</th>
+                    <th>Roan Rn,rn</th>
+                    <th>Champagne Ch,n</th>
+                </tr>
+                <tr>
+                    <td>C&#x1D9C;&#x02B3;: Red Pigment Dilution <br> C: No Dilution</td>
+                    <td>D: Pigment Dilution - Points <br> d: No Dilution</td>
+                    <td>Rn: Roan Co-dominance <br> rn: Lacking Roan Trait</td>
+                    <td>Ch: Champagne Dilution <br> n: No Dilution</td>
+                </tr>
+                <tr>
+                    <td>HZD: <br> Chestnut: Cremello <br> Bay: Perlino <br> Black: Smoky Cream</td>
+                    <td>HZD: <br> Chestnut: Red Dun <br> Bay: Dun <br> Black: Grulla</td>
+                    <td>HZD: <br> Chestnut: 50% Red 50% White <br> Bay: 50% Bay 50% White <br> Black: 50% Black 50% White</td>
+                    <td>HZD: <br> Chestnut: Red Golden <br> Bay: Golden <br> Black: Black Golden</td>
+                </tr>
+                <tr>
+                    <td>HZ: <br> Chestnut: Palomino <br> Bay: Buckskin <br> Black: Smoky Black</td>
+                    <td>HZ: <br> Chestnut: Red Dun <br> Bay: Dun <br> Black: Grulla</td>
+                    <td>HZ: <br> Chestnut: 50% Red 50% White <br> Bay: 50% Bay 50% White <br> Black: 50% Black 50% White</td>
+                    <td>HZ: <br> Chestnut: Red Golden <br> Bay: Golden <br> Black: Black Golden</td>
+                </tr>
+                <tr>
+                    <td>HZR: Non-dilute</td>
+                    <td>HZR: Non-dilute</td>
+                    <td>HZR: Lacking Roan</td>
+                    <td>HZR: Non-dilute</td>
+                </tr>   
+            </tr>
+        </table>
+
+        <br/>
+        <h2>Instructions:</h2>
+        <br/>
+        <p>Enter any of the applicable horse coat genes (Ww, Gg, Ee, Aa, CcrC, Dd, Rnrn, Chn) or a sex chromosome (XX,XY) <br><br/> Make sure you have all the required information to complete your requested cross <br/><br/> Genes in parent 1 and parent 2 must be aligned to get a propper result</p>
+    </div>
+
+    <div class="script" id="script">
+        <div class="inputs">
+            <div class="parent1">
+                <p>Parent 1</p>
+                <input type="text" class="textbox" id="p1" />
+            </div>
+        
+            <div class="parent2">
+                <p>Parent 2</p>
+                <input type="text" class="textbox" id="p2" />
+            </div>
+        </div>
+
+            <button type="submit" onclick="cross()" class="submit">Submit</button>
+            <p id="display"></p>
+            <p id="phenotypes" class="results"></p>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
